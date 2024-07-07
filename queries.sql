@@ -1,10 +1,10 @@
 ## SQL Queries
 
-This section contains SQL queries used to calculate the lead to won opportunity conversion rate and the average number of days to conversion by month.
+-- This section contains SQL queries used to calculate the lead to won opportunity conversion rate and the average number of days to conversion by month.
 
 ## 1. Lead to Won Opportunity Conversion Rate by Month
 
-Calculates the conversion rate from leads to won opportunities by month.
+-- Calculates the conversion rate from leads to won opportunities by month.
 
 SELECT 
     DATE_TRUNC('month', TO_DATE(l."Create Date", 'dd-MMM-yy')) AS month,
@@ -16,7 +16,7 @@ ORDER BY month;
 
 ### 2. Average Days to Conversion by Month
 
-Calculates the average number of days to convert a lead to an opportunity by month.
+-- Calculates the average number of days to convert a lead to an opportunity by month.
 
 SELECT 
     DATE_TRUNC('month', TO_DATE("Create Date", 'dd-MMM-yy')) AS month,
